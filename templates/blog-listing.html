@@ -7,7 +7,7 @@
 
         
             {% for task in tasks %}
-                <a href="{{ url_for('blogcontent', blog_id=task.id) }}">{{task.title}}</a>
+                <a href="{{ url_for('blogcontent', id=task.id) }}">{{task.title}}</a>
                 <p>{{task.body}}</p>
                 
             <br>
