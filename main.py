@@ -60,7 +60,7 @@ def new_blog():
         obj = Blog.query.order_by(Blog.id.desc()).first()
        
         most_recent_idx=obj.id
-        return redirect(url_for('blogcontent',blog_id=most_recent_idx))
+        return redirect(url_for('blogcontent',id=most_recent_idx))
     if request.method == 'GET':
         
         #completed_tasks = Blog.query.filter_by(completed=True).all()
